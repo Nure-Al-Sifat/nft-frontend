@@ -1,0 +1,35 @@
+.card-header-title{
+    height: 40px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+
+}
+
+.card-header-title h2 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: #fff;
+}
+.arrow-box {
+  width: 122px;
+  height: 28px;
+  display: flex;
+
+}
+.arrow {
+  width: 56px;
+  height: 28px;
+  align-items: flex-start;
+  padding: 6px 20px;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  transform: rotate(180deg);
+  margin-right: 10px;
+  cursor: pointer;
+}
