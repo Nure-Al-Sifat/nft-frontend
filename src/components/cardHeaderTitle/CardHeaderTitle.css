@@ -1,10 +1,10 @@
-.card-header-title{
-    height: 40px;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    padding: 30px;
-    justify-content: space-between;
+.card-header-title {
+  height: 40px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  padding: 30px;
+  justify-content: space-between;
 
 }
 
@@ -16,16 +16,19 @@
   line-height: 33px;
   color: #fff;
 }
+
 .arrow-box {
   width: 122px;
   height: 28px;
   display: flex;
 
 }
+
 .arrow {
   width: 56px;
   height: 28px;
-  align-items: flex-start;
+  display: flex;
+  align-items: center;
   padding: 6px 20px;
   border: 1px solid #FFFFFF;
   border-radius: 6px;
