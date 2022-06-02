@@ -10,8 +10,7 @@ function Home() {
       <Sidebar />
       <TopSearchBar />
       <div className="main-section">
-        <Child HeaderTitle="Trending Videos" />
-        <Child HeaderTitle="Popular Genres" />
+        <Child />
       </div>
     </>
   );

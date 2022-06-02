@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import like from "./../../images/Heart.png";
-import liveBtn from "./../../images/live-fill.png";
-import playBtn from "./../../images/play-fill.png";
-import trendingVideos from "../../demoData/trendingVideos";
+import popularGenres from "../../demoData/popularGenres";
+import chevronRight from "./../../images/chevron-right.png";
 
-function CardList() {
-  const [items, setitems] = useState(trendingVideos);
+function PopularList() {
+  const [items, setitems] = useState(popularGenres);
 
   return (
     <>
@@ -13,13 +12,12 @@ function CardList() {
         {items.map((item, index) => (
           <div className="card" key={index}>
             <div className="card-img">
-              <img src={item.songImg} alt="" />
+              <img src={item.img} alt="" />
             </div>
             <div className="card-details">
-              <img src={item.ArtistImg} alt="" />
               <div className="card-text">
-                <h3>{item.song}</h3>
-                <p>{item.Artist}</p>
+                <h3>{item.type}</h3>
+                <p>{item.amount}</p>
               </div>
               <div className="card-like">
                 <img src={like} alt="like" />
@@ -27,13 +25,9 @@ function CardList() {
               </div>
             </div>
             <div className="card-button">
-              <div className="btn-one">
-                <img src={liveBtn} alt="Live" />
-                <h2>View Video</h2>
-              </div>
-
-              <div className="btn-two">
-                <img src={playBtn} alt="play" />
+              <div className="browse-btn">
+                <h2>Browse</h2>
+                <img src={chevronRight} alt="Live" />
               </div>
             </div>
           </div>
@@ -43,4 +37,4 @@ function CardList() {
   );
 }
 
-export default CardList;
+export default PopularList;

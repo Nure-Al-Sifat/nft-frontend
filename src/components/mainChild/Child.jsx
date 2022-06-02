@@ -1,14 +1,16 @@
 import React from "react";
 import CardHeaderTitle from "../cardHeaderTitle/CardHeaderTitle";
 import CardList from "../cardList/CardList";
-import "./Child.css";
+import PopularList from "../cardList/popularList";
 
-function Child(props) {
+function Child() {
   return (
     <>
       <div className="main-child">
-        <CardHeaderTitle title={props.HeaderTitle} />
+        <CardHeaderTitle HeaderTitle="Trending Videos" />
         <CardList />
+        <CardHeaderTitle HeaderTitle="Popular Genres" />
+        <PopularList />
       </div>
     </>
   );

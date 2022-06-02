@@ -1,5 +1,5 @@
 import React from "react";
-import "./Sidebar.css";
+// import "./Sidebar.css";
 import { NavLink } from "react-router-dom";
 import logo from "./../../images/WEB3HORI.png";
 import profile from "./../../images/profile-img.png";
@@ -63,12 +63,7 @@ function Sidebar() {
 
           <div className="side-nav-link">
             {navItem.map((item, index) => (
-              <NavLink
-                to={item.path}
-                key={index}
-                className="link"
-                activeclassName="active"
-              >
+              <NavLink to={item.path} key={index} className="link">
                 <div className="nav-box">
                   <img src={item.icon} alt="" />
                   <h3>{item.name}</h3>
