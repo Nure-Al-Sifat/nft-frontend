@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import like from "./../../images/Heart.png";
 import liveBtn from "./../../images/live-fill.png";
 import playBtn from "./../../images/play-fill.png";
