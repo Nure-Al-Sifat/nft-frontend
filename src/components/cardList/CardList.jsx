@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import like from "./../../images/Heart.png";
 import liveBtn from "./../../images/live-fill.png";
 import playBtn from "./../../images/play-fill.png";
 import trendingVideos from "../../demoData/trendingVideos";
 
 function CardList() {
-  const [items, setitems] = useState(trendingVideos);
+  const [items] = useState(trendingVideos);
 
   return (
     <>
