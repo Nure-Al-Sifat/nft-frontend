@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { ethers } from "ethers";
+import React from "react";
+// import { ethers } from "ethers";
 import back from "./../../images/chevron-left.png";
 import search from "./../../images/search-icon.png";
 import mic from "./../../images/mic.png";

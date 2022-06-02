@@ -4,7 +4,8 @@ import popularGenres from "../../demoData/popularGenres";
 import chevronRight from "./../../images/chevron-right.png";
 
 function PopularList() {
-  const [items, setitems] = useState(popularGenres);
+  const [items, setitems] = useState();
+  setitems(popularGenres);
 
   return (
     <>

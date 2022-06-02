@@ -5,7 +5,8 @@ import playBtn from "./../../images/play-fill.png";
 import trendingVideos from "../../demoData/trendingVideos";
 
 function CardList() {
-  const [items, setitems] = useState(trendingVideos);
+  const [items, setitems] = useState();
+  setitems(trendingVideos);
 
   return (
     <>
