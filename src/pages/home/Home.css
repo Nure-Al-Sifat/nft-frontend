@@ -1,10 +1,12 @@
-.main-section{
-    position: absolute;
-    background: #222126;
-    top: 107px;
-    left: 280px;
-    width: 80%;
-    margin-right: 20px;
-    border-radius: 10px;
-    padding-bottom: 30px;
-  }
+.main-section {
+  position: absolute;
+  background: #222126;
+  top: 107px;
+  left: 300px;
+  width: calc(100% - 320px);
+  margin-right: 20px;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  margin: auto;
+  padding-top: 20px;
+}

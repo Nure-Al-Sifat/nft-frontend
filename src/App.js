@@ -1,7 +1,7 @@
 import "./sass/styles.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
-import Charts from "./pages/Charts/charts";
+import Charts from "./pages/charts/charts";
 import Favorites from "./pages/favorite/Favorites";
 import Playlists from "./pages/playlist/Playlist";
 import Collections from "./pages/collections/Collections";

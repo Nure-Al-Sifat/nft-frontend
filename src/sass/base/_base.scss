@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
 
 * {
   font-family: "Manrope", sans-serif;
@@ -12,6 +12,7 @@
   text-transform: capitalize;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  letter-spacing: 2px;
 }
 
 html::-webkit-scrollbar {
@@ -37,6 +38,9 @@ h2 {
 }
 
 h3 {
+  color: #fff;
+}
+h4 {
   color: #fff;
 }
 

@@ -1,46 +1,59 @@
-import React from "react";
-// import "./Sidebar.css";
+import React, { useEffect, useState } from "react";
+import { ethers } from "ethers";
 import { NavLink } from "react-router-dom";
-import logo from "./../../images/WEB3HORI.png";
-import profile from "./../../images/profile-img.png";
-import premium from "./../../images/premium.png";
-import homeIcon from "./../../images/Home.png";
-import chart from "./../../images/list-ordered.png";
-import likes from "./../../images/Heart-2.png";
-import Play from "./../../images/Play.png";
-import layers from "./../../images/layers.png";
-import Setting from "./../../images/Setting.png";
 
 function Sidebar() {
+  const [profile, setProfile] = useState([]);
+  useEffect(() => {
+    loadProfile();
+  }, []);
+
+  const loadProfile = async () => {
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    await provider.send("eth_requestAccounts", [0]);
+    const signer = provider.getSigner();
+    const account = await signer.getAddress();
+
+    if (account) {
+      let item = {
+        profileImg: "assets/profile-img.png",
+        name: "John Doe",
+        link: "View profile",
+        quilatyImg: "assets/premium.png",
+      };
+      setProfile(item);
+    }
+  };
+
   const navItem = [
     {
       path: "/",
-      icon: homeIcon,
+      icon: "assets/Home.png",
       name: "Home",
     },
     {
       path: "/Charts",
-      icon: chart,
+      icon: "assets/list-ordered.png",
       name: "Chart",
     },
     {
       path: "/favorites",
-      icon: likes,
+      icon: "assets/Heart-2.png",
       name: "Favorites",
     },
     {
       path: "/playlists",
-      icon: Play,
+      icon: "assets/Play.png",
       name: "My Playlists",
     },
     {
       path: "/collections",
-      icon: layers,
+      icon: "assets/layers.png",
       name: "Collections",
     },
     {
       path: "/settings",
-      icon: Setting,
+      icon: "assets/Setting.png",
       name: "Settings",
     },
   ];
@@ -48,16 +61,16 @@ function Sidebar() {
     <>
       <div className="sidebar">
         <div className="sidebar-img">
-          <img src={logo} alt="logo" />
+          <img src="assets/WEB3HORI.png" alt="logo" />
           <div className="sidebar-line"></div>
         </div>
         <div className="profile-box">
-          <img src={profile} alt="" />
+          <img src={profile.profileImg} alt="" />
           <div>
             <div className="profile-box-content">
-              <h3>John Doe</h3>
-              <p>View profile</p>
-              <img src={premium} alt="" />
+              <h3>{profile.name}</h3>
+              <p>{profile.link}</p>
+              <img src={profile.quilatyImg} alt="" />
             </div>
           </div>
 

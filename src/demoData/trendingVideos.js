@@ -1,31 +1,45 @@
-import baby from "./../images/Trending/baby-img.png";
-import Justin from "./../images/Trending/baby-pp.png";
-import Chandelier from "./../images/Trending/Chandelier.png";
-import Sia from "./../images/Trending/Sia.png";
-import Thinking from "./../images/Trending/Thinking.png";
-import Sheeran from "./../images/Trending/Sheeran.png";
-
 const trendingVideos = [
   {
     song: "Baby",
     Artist: "Justin Bieber",
     like: "44",
-    ArtistImg: Justin,
-    songImg: baby,
+    ArtistImg: "assets/Trending/baby-pp.png",
+    songImg: "assets/Trending/baby-img.png",
   },
   {
     song: "Chandelier",
     Artist: "Sia",
     like: "33",
-    ArtistImg: Sia,
-    songImg: Chandelier,
+    ArtistImg: "assets/Trending/Sia.png",
+    songImg: "assets/Trending/Chandelier.png",
   },
   {
     song: "Thinking Out",
     Artist: "Ed Sheeran",
     like: "98",
-    ArtistImg: Sheeran,
-    songImg: Thinking,
+    ArtistImg: "assets/Trending/Sheeran.png",
+    songImg: "assets/Trending/Thinking.png",
+  },
+  {
+    song: "Baby",
+    Artist: "Justin Bieber",
+    like: "44",
+    ArtistImg: "assets/Trending/baby-pp.png",
+    songImg: "assets/Trending/baby-img.png",
+  },
+  {
+    song: "Chandelier",
+    Artist: "Sia",
+    like: "33",
+    ArtistImg: "assets/Trending/Sia.png",
+    songImg: "assets/Trending/Chandelier.png",
+  },
+  {
+    song: "Thinking Out",
+    Artist: "Ed Sheeran",
+    like: "98",
+    ArtistImg: "assets/Trending/Sheeran.png",
+    songImg: "assets/Trending/Thinking.png",
   },
 ];
 

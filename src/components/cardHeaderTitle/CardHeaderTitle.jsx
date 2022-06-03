@@ -1,6 +1,4 @@
 import React from "react";
-import chevronRight from "./../../images/chevron-right.png";
-import chevronLeft from "./../../images/chevron-left-2.png";
 
 function CardHeaderTitle(props) {
   return (
@@ -8,11 +6,11 @@ function CardHeaderTitle(props) {
       <div className="card-header-title">
         <h2>{props.HeaderTitle}</h2>
         <div className="arrow-box">
-          <div className="arrow">
-            <img src={chevronRight} alt="Left" />
+          <div className="arrow" onClick={props.slidePrev}>
+            <img src="assets/chevron-right.png" alt="right" />
           </div>
-          <div className="arrow">
-            <img src={chevronLeft} alt="Left" />
+          <div className="arrow" onClick={props.slideNext}>
+            <img src="assets/chevron-left-2.png" alt="Left" />
           </div>
         </div>
       </div>
